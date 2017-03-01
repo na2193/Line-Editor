@@ -1,0 +1,186 @@
+Script started on Thu Feb 23 07:39:33 2017
+[?1034hbash-3.2$ java Main
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> nl
+type line? (y/n):   y
+1: line one
+type line? (y/n):   y
+2: line two
+type line? (y/n):   y
+3: line three
+type line? (y/n):   y
+4: line four
+type line? (y/n):   y
+5: line five
+type line? (y/n):   n
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> sa
+1: line one
+2: line two
+3: line three
+4: line four
+5: line five
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> cr
+from: 1
+to: 2
+line one
+line two
+
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> pl
+paste after line number: 1
+line one
+line two
+
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> sa
+1: line one
+line two
+
+2: line one
+3: line two
+4: line three
+5: line four
+6: line five
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> pl
+paste after line number: 6
+line one
+line two
+
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> sa
+1: line one
+line two
+
+2: line one
+3: line two
+4: line three
+5: line four
+6: line one
+line two
+
+7: line five
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> el
+line number: 2
+0    5  
+|----+--
+line one
+   Show line: s
+   Copy to string buffer: c
+   Cut: t
+   Paste from string buffer: p
+   Enter new substring: e
+   Delete substring: d
+   Quit line: q
+
+--> e
+0    5  
+|----+--
+line one
+
+insert at position: 5
+text: g
+0    5   10 
+|----+----|
+line  g one
+   Show line: s
+   Copy to string buffer: c
+   Cut: t
+   Paste from string buffer: p
+   Enter new substring: e
+   Delete substring: d
+   Quit line: q
+
+--> q
+Returnin to main menu... 
+
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> sa
+1: line two
+2: line  g one
+3: line three
+4: line four
+5: line one
+line two
+
+6: line five
+Menu: m         Delete line: dl
+Load file: l    Delete range: dr
+Show all: sa    Copy range: cr
+Show line: sl   Paste lines: pl
+Show range: sr  Write to file: w
+New line: nl    Quit: q
+Edit line: el   Write and quit: wq
+
+--> q
+Quiting the program...
+bash-3.2$ exit
+exit
+
+Script done on Thu Feb 23 07:41:32 2017

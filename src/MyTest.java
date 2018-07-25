@@ -14,6 +14,7 @@ public class MyTest {
 		String actualText = line.getText();
 		assertEquals(actualText, expectedText);
 		
+		/*
 		System.out.println("Showing number line");
 		line.showNumberLine();
 		
@@ -21,6 +22,6 @@ public class MyTest {
 		line.deleteSubString(5, 11);
 		
 		System.out.println("Copy Line");
-		line.copyLine(0, 5);
+		line.copyLine(0, 5); */
 	}
 }
